@@ -302,7 +302,7 @@
 							<h4 class="bd">Add Commment:</h4>
 						</div>
 						<div class="col-md-6">
-							<input type="text" name="input" ng-model="addCovidComments.comments" ng-pattern="addCovidComments.word"
+							<input type="text" name="input" ng-model="addCovidComments.comments" ng-pattern="/^[A-z\d_@.#$=!%^)(\]:\*;\?\/\,}{'\|<>\[&\+-]*$/"
 								   ng-trim="true" class="form-control col-md-6 commentCss">
 						</div>
 						<button class="btn btn-primary" ng-click="addComments()">Add</button>
